@@ -1,0 +1,305 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://vocab.openacalendar.org/v1/events.jsonld",
+  "type": "object",
+  "properties": {
+    "data": {
+      "id": "http://vocab.openacalendar.org/v1/events.jsonld/data",
+      "type": "array",
+      "additionalItems": {
+        "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0",
+        "type": "object",
+        "properties": {
+          "slug": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/slug",
+            "type": "integer"
+          },
+          "slugforurl": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/slugforurl",
+            "type": "string"
+          },
+          "summary": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/summary",
+            "type": "string"
+          },
+          "summaryDisplay": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/summaryDisplay",
+            "type": "string"
+          },
+          "description": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/description",
+            "type": "string"
+          },
+          "deleted": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/deleted",
+            "type": "boolean"
+          },
+          "cancelled": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/cancelled",
+            "type": "boolean"
+          },
+          "is_physical": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/is_physical",
+            "type": "boolean"
+          },
+          "is_virtual": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/is_virtual",
+            "type": "boolean"
+          },
+          "siteurl": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/siteurl",
+            "type": "string"
+          },
+          "url": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/url",
+            "type": "string"
+          },
+          "ticket_url": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/ticket_url",
+            "type": ["string","null"]
+          },
+          "timezone": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/timezone",
+            "type": "string"
+          },
+          "start": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start",
+            "type": "object",
+            "properties": {
+              "timestamp": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/timestamp",
+                "type": "integer"
+              },
+              "rfc2882utc": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/rfc2882utc",
+                "type": "string"
+              },
+              "rfc2882local": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/rfc2882local",
+                "type": "string"
+              },
+              "displaylocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/displaylocal",
+                "type": "string"
+              },
+              "yearlocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/yearlocal",
+                "type": "string"
+              },
+              "monthlocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/monthlocal",
+                "type": "string"
+              },
+              "daylocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/daylocal",
+                "type": "string"
+              },
+              "hourlocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/hourlocal",
+                "type": "string"
+              },
+              "minutelocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/minutelocal",
+                "type": "string"
+              },
+              "rfc2882timezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/rfc2882timezone",
+                "type": "string"
+              },
+              "displaytimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/displaytimezone",
+                "type": "string"
+              },
+              "yeartimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/yeartimezone",
+                "type": "string"
+              },
+              "monthtimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/monthtimezone",
+                "type": "string"
+              },
+              "daytimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/daytimezone",
+                "type": "string"
+              },
+              "hourtimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/hourtimezone",
+                "type": "string"
+              },
+              "minutetimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/start/minutetimezone",
+                "type": "string"
+              }
+            }
+          },
+          "end": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end",
+            "type": "object",
+            "properties": {
+              "timestamp": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/timestamp",
+                "type": "integer"
+              },
+              "rfc2882utc": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/rfc2882utc",
+                "type": "string"
+              },
+              "rfc2882local": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/rfc2882local",
+                "type": "string"
+              },
+              "displaylocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/displaylocal",
+                "type": "string"
+              },
+              "yearlocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/yearlocal",
+                "type": "string"
+              },
+              "monthlocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/monthlocal",
+                "type": "string"
+              },
+              "daylocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/daylocal",
+                "type": "string"
+              },
+              "hourlocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/hourlocal",
+                "type": "string"
+              },
+              "minutelocal": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/minutelocal",
+                "type": "string"
+              },
+              "rfc2882timezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/rfc2882timezone",
+                "type": "string"
+              },
+              "displaytimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/displaytimezone",
+                "type": "string"
+              },
+              "yeartimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/yeartimezone",
+                "type": "string"
+              },
+              "monthtimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/monthtimezone",
+                "type": "string"
+              },
+              "daytimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/daytimezone",
+                "type": "string"
+              },
+              "hourtimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/hourtimezone",
+                "type": "string"
+              },
+              "minutetimezone": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/end/minutetimezone",
+                "type": "string"
+              }
+            }
+          },
+          "groups": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/groups",
+            "type": "array",
+            "items": {
+              "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/groups/0",
+              "type": "object",
+              "properties": {
+                "slug": {
+                  "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/groups/0/slug",
+                  "type": "integer"
+                },
+                "title": {
+                  "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/groups/0/title",
+                  "type": "string"
+                },
+                "description": {
+                  "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/groups/0/description",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "venue": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue",
+            "type": "object",
+            "properties": {
+              "slug": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue/slug",
+                "type": "integer"
+              },
+              "title": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue/title",
+                "type": "string"
+              },
+              "description": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue/description",
+                "type": "null"
+              },
+              "address": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue/address",
+                "type": "string"
+              },
+              "addresscode": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue/addresscode",
+                "type": "string"
+              },
+              "lat": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue/lat",
+                "type": "string"
+              },
+              "lng": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/venue/lng",
+                "type": "string"
+              }
+            }
+          },
+          "country": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/country",
+            "type": "object",
+            "properties": {
+              "title": {
+                "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/country/title",
+                "type": "string"
+              }
+            }
+          },
+          "medias": {
+            "id": "http://vocab.openacalendar.org/v1/events.jsonld/data/0/medias",
+            "type": "array",
+            "items": {}
+          }
+        },
+        "required": [
+          "slug",
+          "slugforurl",
+          "summary",
+          "summaryDisplay",
+          "description",
+          "deleted",
+          "cancelled",
+          "is_physical",
+          "is_virtual",
+          "siteurl",
+          "url",
+          "ticket_url",
+          "timezone",
+          "start",
+          "end"
+        ]
+      }
+    },
+    "localtimezone": {
+      "id": "http://vocab.openacalendar.org/v1/events.jsonld/localtimezone",
+      "type": "string"
+    }
+  },
+  "required": [
+    "data",
+    "localtimezone"
+  ]
+}
